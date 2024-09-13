@@ -1,6 +1,6 @@
 
 from AgenteViajero import AgenteViajero
-from Question5 import bfs, dfs_con_limite
+from Question5 import bfs, dfs_con_limite, dfs
 
 if __name__ == "__main__":
     
@@ -12,3 +12,4 @@ if __name__ == "__main__":
     #antonio = AgenteViajero()
     antonio = bfs(estado_inicial, estado_objetivo)
     antonio = dfs_con_limite(estado_inicial, estado_objetivo, limite_profundidad)
+    antonio = dfs(estado_inicial, estado_objetivo) ### Solo DFS no llega a un resultado
